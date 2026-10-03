@@ -16,7 +16,7 @@ checking_pool = input("Is the pool safe for you? (yes/no): ")
 if Age >= 9 or beginner.lower() == "yes" and checking_pool.lower() == "no":
     print("You cannot swim in the pool.")
 
-elif Age < 9 and beginner.lower() == "no" and checking_pool.lower() == "no":
+elif Age <= 9 and beginner.lower() == "no" and checking_pool.lower() == "no":
     print("You cannot swim in the pool.")
     
 elif Age >= 9 and beginner.lower() == "no" and checking_pool.lower() == "yes":
