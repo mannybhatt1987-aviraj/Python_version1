@@ -13,15 +13,17 @@ while i  < attempt:
     
     
    guess = int(input("Enter your guess from 1 to 50 : "))
+   
+   if guess < 1 or guess > 50 : 
+          print("Invalid")  
  
-   if guess == secret_number:
+   elif guess == secret_number:
        print("You  win")
    elif guess < secret_number:
-       print("You Lost .")
+       print("Not correct.Try again.")
    elif guess > secret_number:
-       print("You Lost again.")
-   else : 
-       print("Invalid")   
+       print("Not correct.Try again.")
+   
        
        i = i + 1         
        print("Attempts Left :", attempt - i )
