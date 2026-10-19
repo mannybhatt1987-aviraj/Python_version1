@@ -1,37 +1,53 @@
-#Main part :  decorate the heading
-print("=============================")
-print("=============================")
-print("Diamond Pattern")
-print("=============================")
-print("=============================")
+print("=============Daimond Pattern=============")
+print("")
 
-#Part 1 : Create the star pyramid section
-
-star_pyramid_section = int(input("Enter The number of rows : "))
-
-#Part 2 : Biuld Row and columns with nested loops
-
-for row in range (4):
-    for plus in range (row+1):
-    
-#Part 3 : Keep output on one line 
-
-      print("+" ,end="")
-      print()
-    
- #Part 4 : Create Floyds Triangle
- 
-y = int(input("Enter No. of rows : "))
-
+name = input("Enter your name : ")
+print("")
+print(f"Hello {name}!")
+print("")
+rows = int(input(f"Enter the number of your rows {name} : "))
+print("")
 no = 1
 
-for row in range (y):
-    for y in range (row+1):
-        print(no ,end="")
-        no = no+1
-        print() 
+row = int(input("Enter number of rows (down) "))
+
+for i in range (rows):
+     for space in range(rows-i-1):
+         print("" ,end="")
+         for j in range (i+1):
+             print(no ,end="")
+             
+             no = no+1
         
- #Part 5 : Count up across every row
- 
- 
- 
+     print()    
+     
+     
+if row%2 ==0:
+   half= row//2
+else:
+    half= row//2 +1
+
+space=half-1
+number=1
+for i in range(1,half+1):
+   for j in range(1,space+1):
+       print(end="* ")
+   space=space-1
+   num=1
+   for k in range(2*i-1):
+       print(num,end=" ")
+       number=number+1
+
+   print()
+
+space=1
+for i in range(1,half):
+   for j in range(1,space+1):
+      print(end="# ")
+   space=space+1
+   num=1
+   for k in range(1,2*(half-i)):
+      print(num,end=" ")
+      num=num+1
+   print()    
+
