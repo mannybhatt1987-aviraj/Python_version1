@@ -15,6 +15,6 @@ except :
 else : 
     print("no exeption.") 
 finally :
-    print("Always excetuted")       
+    print("Always exceuted")       
         
         
