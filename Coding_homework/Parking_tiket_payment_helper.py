@@ -34,12 +34,12 @@ while True:
     
 #Part 6 : Add valid notes 
 
-    notes_inserted += 1
+    total_inserted_notes += 1
     
     
 #Part 7 : Stop the loop with BREAK 
    
-    change_due = change_calculator(total_inserted_notes,ticket_price)
+    
    
    
     if total_inserted_notes >= ticket_price:
