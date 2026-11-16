@@ -4,9 +4,10 @@ print("========parking ticket payment helper========")
 
 #Part 1 : Create the change function
 
-def change_calculator(paid,price):
-    total = paid - price
-    return total
+def change_calculator(amount_paid,ticket_price):
+    change =  amount_paid - ticket_price
+    return change
+
 
 #Part 2 : Set up the ticket price 
 
@@ -34,7 +35,7 @@ while True:
     
 #Part 6 : Add valid notes 
 
-    total_inserted_notes += 1
+    total_inserted_notes += ruppee_notes
     
     
 #Part 7 : Stop the loop with BREAK 
@@ -46,13 +47,14 @@ while True:
      print("Enough rupee notes.")
      break
     
-    
+change_due = change_calculator(total_inserted_notes,ticket_price)    
 #Part 8 : Use PASS when no change is needed 
 
     
 if change_due == 0:
      pass
- 
+else : 
+    print(f"change due is {change_due}") 
  #Part 9 : Print the final Summary
  
 print("\n===== PAYMENT SUMMARY =====")
